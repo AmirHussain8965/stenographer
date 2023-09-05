@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
+body{
+    background: #F5FAFA;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.accounts_section{
+    padding: 40px 0px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.accounts_card_body_div{
+    background: #FFFFFF;
+    height: auto;
+    min-height: 500px;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 50px 20px 70px 20px;
+}
+.accounts_logo{
+    text-align: center;
+}
+.accounts_logo img{
+    height: 50px;
+    width: auto;
+}
+.accounts_logo h3{
+    font-weight: 600;
+    padding-top: 30px;
+}
+.accounts_logo label{
+    font-weight: 400;
+    color: #1A1A1ACC;
+    font-size: 15px;
+}
+.accounts_card_inner_main{
+    max-width: 450px;
+    margin: auto;
+}
+.accounts_input_div{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.accounts_input_div label{
+    color: #333333;
+    font-weight: 500;
+    font-size: 15px;
+}
+.accounts_input_div input{
+    border: 1px solid #E5E5E5;
+    color: #808080;
+    outline: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    width: 100%;
+}
+.accounts_input_div input:focus{
+    border: 1px solid #40A29F;
+    box-shadow: 0px 2px 10px 0px #40A29F40;
+}
+.accounts_input_div select{
+    border: 1px solid #E5E5E5;
+    color: #808080;
+    outline: none;
+    font-size: 15px;
+    padding: 12px 12px;
+}
+.accounts_input_div select:focus{
+    box-shadow: none;
+    border: 1px solid #E5E5E5;
+}
+.password_input{
+    position:  relative;
+}
+.password_input button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+.password_input input{
+    padding-right: 40px;
+}
+#eye-icon {
+    width: 20px;
+    height: 20px;
+}
+#eye-icon2 {
+    width: 20px;
+    height: 20px;
+}
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+.toggle-switch input {
+  display: none;
+}
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 0.5px solid #E5E5E5;
+  background-color: white;
+  border-radius: 34px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 4px;
+  bottom: 2.3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+  box-shadow: 1px 1px 2px -1px #3333334D;
+}
+input:checked + .slider {
+  background-color: #2196F3;
+}
+input:checked + .slider:before {
+  transform: translateX(18px);
+}
+.accounts_toogle_switch{
+    padding-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+.accounts_toogle_switch label{
+    font-size: 14px;
+    user-select: none;
+    color: #1A1A1A;
+    cursor: pointer;
+}
+.acconts_switch_main{
+    display: flex;
+    justify-content: space-between;
+}
+.acconts_switch_main a{
+    padding-top: 10px;
+    font-size: 14px;
+    user-select: none;
+    color: #53131E;
+    cursor: pointer;
+    text-decoration: none;
+}
+.acconts_button{
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    text-align: center;
+}
+.acconts_button button{
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 6px;
+    color: #fff;
+    background: #40A29F;
+    border: none;
+    font-size: 16px;
+}
+.acconts_button a{
+    width: 100%;
+}
+.accounts_border_div{
+    margin-top: 30px;
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
+    padding: 8px;
+}
+.acconts_social_button button{
+    border: 1px solid #40A29F;
+    color: #1A1A1A;
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 6px;
+    background-color: transparent;
+    font-size: 16px;
+    margin-top: 40px;
+    font-weight: 500;
+}
+.acconts_social_button p{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+.acconts_social_button a{
+    text-decoration: none;
+    color: #40A29F;
+}
+.billing_links{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.billing_links a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #40A29F;
+}
+.billing_links a.acitve_links{
+    border-bottom: 1px solid #40A29F;
+}

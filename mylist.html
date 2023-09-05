@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scan Document - STENOGRAPHER</title>
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/dashboard.css">
+</head>
+
+<body>
+
+    <div id="dashboard_main">
+        <div class="sidebar_main_div mysidebar" id="mysidebar">
+            <div class="sidebar_logo">
+                <img src="assets/img/logo.png" alt="">
+                <button id="hideButton" type="button"><i
+                        class="bi bi-x-lg"></i></button>
+            </div>
+            <div class="sidebar_links_main">
+                <div class="sidebar_links_inner">
+                    <a href="dashboard.html">
+                        <img src="assets/img/s1.png" alt="">
+                        <label for="">Scan Document</label>
+                    </a>
+                </div>
+                <div class="sidebar_links_inner">
+                    <a href="worldlist.html" class="active">
+                        <img src="assets/img/s2.png" alt="">
+                        <label for="">Word List</label>
+                    </a>
+                </div>
+                <div class="sidebar_links_inner">
+                    <a href="#">
+                        <img src="assets/img/s3.png" alt="">
+                        <label for="">My Lists</label>
+                    </a>
+                </div>
+                <div class="sidebar_links_inner">
+                    <a href="#">
+                        <img src="assets/img/s4.png" alt="">
+                        <label for="">Sign Out</label>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard_content_main">
+            <div class="dashboard_header">
+                <div class="d-flex gap-2">
+                    <button id="showButton" type="button"><i
+                            class="bi bi-text-left"></i></button>
+                    <h1 class="dash_title">Word List</h1>
+                </div>
+                <div class="dash_header_logo_main">
+                    <div class="dash_header_notfi">
+                        <img src="assets/img/Notifications.png" alt="">
+                        <span></span>
+                    </div>
+                    <div class="dash_header_profile">
+                        <div>
+                            <h5>Ahmed</h5>
+                            <label for="">User</label>
+                        </div>
+                        <img src="assets/img/dash.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="wordlist_bottom_bar">
+                <h5>My Lists</h5>
+                <div>
+                    <label for="">Help</label>
+                    <button type="button">Enter Steno</button>
+                    <button type="button" class="act_tn">Upload File</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <button type="button" class="for_modal" data-bs-toggle="modal"
+        data-bs-target="#exampleModal">Upload</button>
+    <div class="modal fade wordlist_modal_one" id="exampleModal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="wordlist_modal_main">
+                        <button type="button" class="btn-close"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="wordlist_modal_content_main_div pt-5">
+                            <div class="wordlist_black_bar_text pt-5">
+                                <h5>Words</h5>
+                                <label for="">Apple</label>
+                                <label for="">Apple</label>
+                                <label for="">Apple</label>
+                                <label for="">Apple</label>
+                                <label for="">Apple</label>
+                                <label for="">Apple</label>
+                                <label for="">Apple</label>
+                                <label for="">Apple</label>
+                                <label for="">Apple</label>
+                                <label for="">Apple</label>
+                                <label for="">Apple</label>
+                            </div>
+                            <div
+                                class="d-flex justify-content-center gap-3 mt-5">
+                                <button type="button">Save</button>
+                                <button type="button"
+                                    class="act_tn">Download</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" class="for_modal" data-bs-toggle="modal"
+        data-bs-target="#exampleModal2">Upload</button>
+    <div class="modal fade wordlist_modal_two" id="exampleModal2" tabindex="-1"
+        aria-labelledby="exampleModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="wordlist_modal2_main">
+                        <div class="wordlist_modal_inputs_main_div">
+                            <div class="accounts_input_div">
+                                <label for="">Enter Name of List</label>
+                                <input type="text" placeholder="Enter Name"
+                                    required />
+                            </div>
+                            <div class="accounts_input_div">
+                                <label for="">Enter Creation Date</label>
+                                <input type="date" placeholder="Select Date"
+                                    required />
+                            </div>
+                            <div class="acconts_button">
+                                <button type="submit">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/dashboard.js"></script>
+
+</body>
+
+</html>
