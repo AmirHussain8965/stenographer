@@ -19,55 +19,135 @@
 <body>
 
 
+
     <section class="accounts_section">
-        <div class="w-100">
-            <div class="billing_links">
-                <a href="billing.html">Billing Information</a>
-                <a href="payment.html" class="acitve_links">Payment Information</a>
-            </div>
-            <div class="container">
-                <form class="accounts_card_body_div">
-                    <div class="accounts_card_inner_main">
-                        <div class="accounts_logo">
-                            <h3>Payment Information</h3>
-                            <label for="">Please Provide all the Information Required for Payment.</label>
+        <div class="container">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Billing Information</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Payment Information</button>
+                </li>
+               
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <form class="accounts_card_body_div">
+                        <div class="accounts_card_inner_main">
+                            <div class="accounts_logo">
+                                <h3>Payment Information</h3>
+                                <label for="">Please Provide all the Information Required for Payment.</label>
+                            </div>
+                            <div class="accounts_inputs_main_div">
+                                <div class="accounts_input_div">
+                                    <label for="">Credit Card Number</label>
+                                    <input type="number" placeholder="Enter Credit Card Number" />
+                                </div>
+                                <div class="accounts_input_div">
+                                    <label for="">Card Type</label>
+                                    <select class="form-select" name="" id="">
+                                        <option value="" hidden>Select Card Type</option>
+                                        <option value="">Master Card</option>
+                                        <option value="">Visa Card</option>
+                                    </select>
+                                </div>
+                                <div class="accounts_input_div">
+                                    <label for="">Expiration Date</label>
+                                    <input type="date"  placeholder="Select Date" />
+                                </div>
+                                <div class="accounts_input_div">
+                                    <label for="">CCV</label>
+                                    <input type="number" placeholder="Enter 4 Digit CCV" />
+                                </div>
+                                <div class="accounts_input_div">
+                                    <label for="">Phone Number</label>
+                                    <input type="number" placeholder="Enter Phone Number" />
+                                </div>
+                            </div>
+                            <div class="acconts_button">
+                                <a href="billing.html"><button type="button">Back</button></a>
+                                <button type="submit">Next</button>
+                            </div>
                         </div>
-                        <div class="accounts_inputs_main_div">
-                            <div class="accounts_input_div">
-                                <label for="">Credit Card Number</label>
-                                <input type="number" placeholder="Enter Credit Card Number" />
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <form class="accounts_card_body_div">
+                        <div class="accounts_card_inner_main">
+                            <div class="accounts_logo">
+                                <h3>Billing Information </h3>
+                                <label for="">Please Provide all the information Required for Billing.</label>
                             </div>
-                            <div class="accounts_input_div">
-                                <label for="">Card Type</label>
-                                <select class="form-select" name="" id="">
-                                    <option value="" hidden>Select Card Type</option>
-                                    <option value="">Master Card</option>
-                                    <option value="">Visa Card</option>
-                                </select>
+                            <div class="accounts_inputs_main_div">
+                                <div class="accounts_input_div">
+                                    <label for="">First Name</label>
+                                    <input type="text"  placeholder="Enter First Name" />
+                                </div>
+                                <div class="accounts_input_div">
+                                    <label for="">Last Name</label>
+                                    <input type="text"  placeholder="Enter Last Name" />
+                                </div>
+                                <div class="accounts_input_div">
+                                    <label for="">Address 1</label>
+                                    <input type="text"  placeholder="Enter Address" />
+                                </div>
+                                <div class="accounts_input_div">
+                                    <label for="">Address 2</label>
+                                    <input type="text"  placeholder="Enter Address" />
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="accounts_input_div">
+                                            <label for="">Country</label>
+                                            <select name="" id="" class="form-select">
+                                                <option value="" hidden>Choose Country</option>
+                                                <option value="">Pakistan</option>
+                                                <option value="">India</option>
+                                                <option value="">Iran</option>
+                                                <option value="">KSA</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="accounts_input_div">
+                                            <label for="">City</label>
+                                            <select name="" id="" class="form-select">
+                                                <option value="" hidden>Choose City</option>
+                                                <option value="">Lahore</option>
+                                                <option value="">Delhi</option>
+                                                <option value="">Jaddah</option>
+                                                <option value="">Karachi</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="accounts_input_div">
+                                            <label for="">State</label>
+                                            <input type="text"  placeholder="Enter State" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="accounts_input_div">
+                                            <label for="">Zip Code</label>
+                                            <input type="text"  placeholder="Enter Zip Code" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accounts_input_div">
+                                    <label for="">Phone Number</label>
+                                    <input type="number" placeholder="Enter Phone Number" />
+                                </div>
                             </div>
-                            <div class="accounts_input_div">
-                                <label for="">Expiration Date</label>
-                                <input type="date"  placeholder="Select Date" />
-                            </div>
-                            <div class="accounts_input_div">
-                                <label for="">CCV</label>
-                                <input type="number" placeholder="Enter 4 Digit CCV" />
-                            </div>
-                            <div class="accounts_input_div">
-                                <label for="">Phone Number</label>
-                                <input type="number" placeholder="Enter Phone Number" />
+                            <div class="acconts_button">
+                                <button type="submit">Next</button>
                             </div>
                         </div>
-                        <div class="acconts_button">
-                            <a href="billing.html"><button type="button">Back</button></a>
-                            <button type="submit">Next</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
+                    </form>
+                </div>
+              </div>
         </div>
     </section>
-
 
 
 

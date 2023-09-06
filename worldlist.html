@@ -40,7 +40,7 @@
                     </a>
                 </div>
                 <div class="sidebar_links_inner">
-                    <a href="#">
+                    <a href="mylist.html">
                         <img src="assets/img/s3.png" alt="">
                         <label for="">My Lists</label>
                     </a>
@@ -177,7 +177,9 @@
             <div class="modal-content">
                 <div class="modal-body">
                     <div class="wordlist_modal2_main">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         <div class="wordlist_modal_inputs_main_div">
+                            <h4 class="modal_title">Save List</h4>
                             <div class="accounts_input_div">
                                 <label for="">Enter Name of List</label>
                                 <input type="text" placeholder="Enter Name"
@@ -186,6 +188,92 @@
                             <div class="accounts_input_div">
                                 <label for="">Enter Creation Date</label>
                                 <input type="date" placeholder="Select Date"
+                                    required />
+                            </div>
+                            <div class="acconts_button">
+                                <button type="submit">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" class="for_modal" data-bs-toggle="modal"
+        data-bs-target="#exampleModal3">Upload</button>
+    <div class="modal fade wordlist_modal_two" id="exampleModal3" tabindex="-1"
+        aria-labelledby="exampleModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="wordlist_modal3_main">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <h4>Confirmation</h4>
+                        <p>The word <span>“Apple”</span> is already defined in
+                            your dictionary as <span>“Ap”</span></p>
+                        <div class="two_button_main">
+                            <button type="button">Replace</button>
+                            <button type="button" class="act_tn">Keep
+                                Orignal</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" class="for_modal" data-bs-toggle="modal"
+        data-bs-target="#exampleModal4">Upload</button>
+    <div class="modal fade wordlist_modal_two" id="exampleModal4" tabindex="-1"
+        aria-labelledby="exampleModal4Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="wordlist_modal4_main">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="wordlist_modal_inputs_main_div">
+                            <h4 class="modal_title">Replace Steno</h4>
+                            <div class="accounts_input_div">
+                                <label for="">Selected Word</label>
+                                <input type="text" placeholder="Apple"
+                                    required />
+                            </div>
+                            <div class="accounts_input_div">
+                                <label for="">Enter New Steno</label>
+                                <input type="text" placeholder="App"
+                                    required />
+                            </div>
+                            <div class="acconts_button">
+                                <button type="submit">Replace</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <button type="button" class="for_modal" data-bs-toggle="modal"
+        data-bs-target="#exampleModal5">Upload</button>
+    <div class="modal fade wordlist_modal_two" id="exampleModal5" tabindex="-1"
+        aria-labelledby="exampleModal5Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="wordlist_modal4_main">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="wordlist_modal_inputs_main_div">
+                            <h4 class="modal_title">Add Steno</h4>
+                            <div class="accounts_input_div">
+                                <label for="">Selected Word</label>
+                                <input type="text" placeholder="Apple"
+                                    required />
+                            </div>
+                            <div class="accounts_input_div">
+                                <label for="">Enter New Steno</label>
+                                <input type="text" placeholder="App"
                                     required />
                             </div>
                             <div class="acconts_button">
